@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hi-Latn" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Standup Reflection | Suhail Se Khudtakk</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Notice -->
+    <div class="top-notice-bar">
+        <div class="notice-inner">
+            <span class="comic-sticker"><i class="fa-solid fa-mug-hot"></i> Chai & Read</span>
+            <span>"Aaram se baitho, chai piyo, aur dimag ka load halka karo."</span>
+        </div>
+    </div>
+
+    <!-- Editorial Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-wrapper">
+                <div class="brand-monogram">س</div>
+                <div class="brand-info">
+                    <span class="brand-name">Suhail Se Khudtakk</span>
+                    <span class="brand-tagline">Standup • Psychology • Desi Reality</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-item-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about.html" class="nav-item-link"><i class="fa-solid fa-user"></i> About Your Peer</a>
+                <a href="psychology.html" class="nav-item-link"><i class="fa-solid fa-brain"></i> Psychology & Self</a>
+                <a href="blogs.html" class="nav-item-link active"><i class="fa-solid fa-book-open"></i> Comic Reflections</a>
+                <a href="ask.html" class="nav-item-link"><i class="fa-solid fa-comment-dots"></i> Dil Ka Kalesh</a>
+                <a href="admin.html" class="nav-item-link admin-link" title="Control Panel">
+                    <i class="fa-solid fa-sliders"></i> Panel
+                </a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                </button>
+                <a href="blogs.html" class="btn btn-secondary btn-sm">
+                    <i class="fa-solid fa-arrow-left"></i> All Reflections
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="section-padding" style="padding-top: 50px;">
+        <article class="narrow-container" id="articleDetailContainer">
+            <div class="article-detail-header">
+                <div class="article-detail-kicker">
+                    <span class="comic-sticker" id="detailCategory">Overthinking & Brain</span>
+                </div>
+                <h1 class="article-detail-title" id="detailTitle">Loading reflection...</h1>
+                <div class="article-detail-meta">
+                    <span><i class="fa-solid fa-microphone-lines"></i> By Your Peer</span>
+                    <span><i class="fa-regular fa-clock"></i> <span id="detailReadTime">5 min read</span></span>
+                    <span><i class="fa-regular fa-calendar"></i> <span id="detailDate">Recent</span></span>
+                </div>
+            </div>
+
+            <div class="article-detail-body" id="detailContent">
+                <!-- Injected via app.js -->
+            </div>
+
+            <!-- Reflection Box -->
+            <div class="psych-exercise-box">
+                <h4><i class="fa-solid fa-mug-hot"></i> Aaj Ka Ground Reality Check:</h4>
+                <p id="detailPrompt">Bhai sach batana: Is problem ka kitna percent sach me tumhare control me hai?</p>
+            </div>
+
+            <div style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--border-medium); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                <a href="blogs.html" class="btn btn-secondary">
+                    <i class="fa-solid fa-arrow-left"></i> Wapas Comic Library Jayein
+                </a>
+                <a href="ask.html" class="btn btn-warm">
+                    <i class="fa-solid fa-mug-hot"></i> Is Par Baat Karein
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Master Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom-row">
+                <p>&copy; 2026 Suhail Se Khudtakk. Written with wit, soul, and science.</p>
+                <p><a href="index.html" style="color: #f97316;">Back to Home</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

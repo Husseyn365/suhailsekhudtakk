@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel | Suhail Se Khudtakk & E-Commerce Creator Suite</title>
+    <meta name="description" content="Control panel for Suhail Se Khudtakk - manage blog posts, counseling inquiries, and explore free website creators like Shopify, Wix, WooCommerce, and Webflow with our expert consultant guide.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Admin Stylesheet -->
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Main Shell -->
+    <div class="admin-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="sidebar-brand">
+                    <span class="brand-badge">س</span>
+                    <div class="brand-text">
+                        <span class="title">Suhail Se Khudtakk</span>
+                        <span class="sub">Admin & Creator Hub</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Consultant Profile Chip -->
+            <div class="sidebar-profile">
+                <img src="assets/suhail-hussain.png" alt="Lead Consultant" class="sidebar-avatar">
+                <div class="profile-details">
+                    <span class="name">Lead Tech Consultant</span>
+                    <span class="role">E-Commerce Consultant & AI Strategist</span>
+                    <span class="badge-consultant"><i class="fa-solid fa-certificate"></i> 12 Yrs Tech • 32 Yrs Life</span>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-tab="tab-builders">
+                    <i class="fa-solid fa-shapes"></i>
+                    <span>Website Creators Hub</span>
+                    <span class="badge-pill-hot">Free / Trials</span>
+                </button>
+                <button class="nav-item" data-tab="tab-inbox">
+                    <i class="fa-solid fa-inbox"></i>
+                    <span>"Ask Suhail" Inbox</span>
+                    <span class="counter-badge" id="inboxCounter">0</span>
+                </button>
+                <button class="nav-item" data-tab="tab-posts">
+                    <i class="fa-solid fa-feather-pointed"></i>
+                    <span>Blog Post Manager</span>
+                    <span class="counter-badge" id="postCounter">6</span>
+                </button>
+                <button class="nav-item" data-tab="tab-calculator">
+                    <i class="fa-solid fa-calculator"></i>
+                    <span>Store Cost Calculator</span>
+                </button>
+                <button class="nav-item" data-tab="tab-checklist">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span>E-Com AI Scale Checklist</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="index.html" class="btn btn-outline-gold btn-block btn-sm">
+                    <i class="fa-solid fa-arrow-left"></i> View Live Website
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="admin-main">
+            <!-- Top Bar -->
+            <header class="admin-topbar">
+                <div class="topbar-left">
+                    <button class="sidebar-toggle-btn" id="sidebarToggleBtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="breadcrumb">
+                        <span>Dashboard</span> / <strong id="activeTabTitle">Website Creators & Launchpad</strong>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <span class="domain-tag"><i class="fa-solid fa-globe"></i> suhailsekhudtak.com</span>
+                    <button class="theme-btn" id="adminThemeToggle" title="Toggle Theme">
+                        <i class="fa-solid fa-sun light-icon"></i>
+                        <i class="fa-solid fa-moon dark-icon"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- TAB 1: WEBSITE CREATORS & E-COMMERCE LAUNCHPAD (Wix, Shopify, etc.) -->
+            <section class="tab-pane active" id="tab-builders">
+                <div class="pane-header">
+                    <div class="header-text">
+                        <h2>Free Website Creators & E-Commerce Launchpad</h2>
+                        <p>Expert comparative advisory for startups, creators, and online businesses in the AI era.</p>
+                    </div>
+                    <div class="header-badge">
+                        <i class="fa-solid fa-store"></i> 12+ Years Enterprise & Startup Tech Insights
+                    </div>
+                </div>
+
+                <!-- Quick Recommendation Banner -->
+                <div class="recommendation-banner">
+                    <div class="rec-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div class="rec-text">
+                        <h4>Suhail's Quick Rule of Thumb:</h4>
+                        <p>
+                            Agar aapko <strong>sirf blog, portfolio ya service site</strong> banana hai bina coding ke, toh <strong>Wix Free Tier</strong> ya <strong>WordPress</strong> chunein. 
+                            Lekin agar aapko <strong>real e-commerce store, physical products ya dropshipping scale</strong> karni hai, toh bina soche <strong>Shopify ($1/month promo & free trial)</strong> par shuru karein.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Platform Comparison Cards Grid -->
+                <div class="builders-grid">
+                    <!-- Shopify Card -->
+                    <div class="builder-card featured-builder">
+                        <div class="builder-top">
+                            <div class="builder-icon shopify-logo"><i class="fa-brands fa-shopify"></i></div>
+                            <div class="builder-badges">
+                                <span class="badge-featured">#1 E-Commerce King</span>
+                                <span class="badge-price">Free Trial + $1/mo Promo</span>
+                            </div>
+                        </div>
+                        <h3 class="builder-title">Shopify</h3>
+                        <p class="builder-desc">World's #1 e-commerce engine powering millions of global merchants. Complete checkout, inventory, payments, shipping, and automated AI catalog tools.</p>
+                        
+                        <div class="consultant-verdict">
+                            <strong><i class="fa-solid fa-user-tie"></i> Suhail's Verdict:</strong>
+                            <p>"Agar aap product bechna chahte hain toh time waste mat kijiye. Maine jhanklo.com aur global clients ke liye scale kiya hai; Shopify ka checkout conversion rate unbeatable hai."</p>
+                        </div>
+
+                        <ul class="builder-features">
+                            <li><i class="fa-solid fa-check"></i> Free 3-Day Trial + 3 Months at $1/month promo</li>
+                            <li><i class="fa-solid fa-check"></i> Built-in Shopify Magic AI (product descriptions, banners)</li>
+                            <li><i class="fa-solid fa-check"></i> Highest converting checkout in the world (Shop Pay)</li>
+                            <li><i class="fa-solid fa-check"></i> 8,000+ Apps for dropshipping, marketing & logistics</li>
+                        </ul>
+
+                        <div class="builder-actions">
+                            <a href="https://www.shopify.com/free-trial" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-block">
+                                <i class="fa-solid fa-rocket"></i> Launch Shopify (Free Trial)
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Wix Card -->
+                    <div class="builder-card">
+                        <div class="builder-top">
+                            <div class="builder-icon wix-logo"><i class="fa-solid fa-w"></i></div>
+                            <div class="builder-badges">
+                                <span class="badge-free">100% Free Tier</span>
+                                <span class="badge-drag">Drag & Drop No-Code</span>
+                            </div>
+                        </div>
+                        <h3 class="builder-title">Wix (Free Website Creator)</h3>
+                        <p class="builder-desc">Best all-in-one free website builder with pixel-perfect visual drag-and-drop editor, 900+ modern templates, and built-in AI website creator.</p>
+                        
+                        <div class="consultant-verdict">
+                            <strong><i class="fa-solid fa-user-tie"></i> Suhail's Verdict:</strong>
+                            <p>"Non-tech founders, coaches, aur personal blog ke liye Wix ka free tier bohot zabardast hai. Aap bina kisi developer ke 2 ghante me live jaa sakte hain."</p>
+                        </div>
+
+                        <ul class="builder-features">
+                            <li><i class="fa-solid fa-check"></i> 100% Free Plan with Wix subdomain & free cloud hosting</li>
+                            <li><i class="fa-solid fa-check"></i> Wix ADI (Artificial Design Intelligence) site generator</li>
+                            <li><i class="fa-solid fa-check"></i> Full blogging engine with scheduling & social share</li>
+                            <li><i class="fa-solid fa-check"></i> Upgradeable to E-Commerce when you start selling</li>
+                        </ul>
+
+                        <div class="builder-actions">
+                            <a href="https://www.wix.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-block">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Wix (Start Free)
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- WordPress + WooCommerce -->
+                    <div class="builder-card">
+                        <div class="builder-top">
+                            <div class="builder-icon wp-logo"><i class="fa-brands fa-wordpress"></i></div>
+                            <div class="builder-badges">
+                                <span class="badge-free">100% Open Source Free</span>
+                                <span class="badge-drag">Full Ownership</span>
+                            </div>
+                        </div>
+                        <h3 class="builder-title">WordPress + WooCommerce</h3>
+                        <p class="builder-desc">Powers 43% of the internet. Complete free open-source software with infinite flexibility, SEO superiority, and zero platform transaction fees.</p>
+                        
+                        <div class="consultant-verdict">
+                            <strong><i class="fa-solid fa-user-tie"></i> Suhail's Verdict:</strong>
+                            <p>"Blogging ke liye WordPress se behtar koi platform nahi bana. Agar aapko apne data par 100% control chahiye aur long-term SEO play karna hai, choose WP."</p>
+                        </div>
+
+                        <ul class="builder-features">
+                            <li><i class="fa-solid fa-check"></i> Free software (WooCommerce plugin is 100% free)</li>
+                            <li><i class="fa-solid fa-check"></i> 60,000+ free plugins for any feature imaginable</li>
+                            <li><i class="fa-solid fa-check"></i> Best blogging CMS architecture in existence</li>
+                            <li><i class="fa-solid fa-check"></i> Cheap hosting starting from $2.5/mo (Hostinger/Bluehost)</li>
+                        </ul>
+
+                        <div class="builder-actions">
+                            <a href="https://wordpress.org" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-block">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Explore WordPress.org
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Webflow -->
+                    <div class="builder-card">
+                        <div class="builder-top">
+                            <div class="builder-icon webflow-logo"><i class="fa-solid fa-cubes"></i></div>
+                            <div class="builder-badges">
+                                <span class="badge-free">Free Starter Plan</span>
+                                <span class="badge-drag">High Aesthetics</span>
+                            </div>
+                        </div>
+                        <h3 class="builder-title">Webflow</h3>
+                        <p class="builder-desc">Visual development platform generating clean production-grade HTML/CSS. Best for luxury brands, design studios, and micro-interactions.</p>
+                        
+                        <div class="consultant-verdict">
+                            <strong><i class="fa-solid fa-user-tie"></i> Suhail's Verdict:</strong>
+                            <p>"Webflow ka learning curve thoda steep hai, lekin iska aesthetic output Apple level ka hota hai. Premium look ke liye unmatched."</p>
+                        </div>
+
+                        <ul class="builder-features">
+                            <li><i class="fa-solid fa-check"></i> Free Starter Plan (up to 2 pages & webflow.io domain)</li>
+                            <li><i class="fa-solid fa-check"></i> Micro-animations and 3D visual triggers without code</li>
+                            <li><i class="fa-solid fa-check"></i> Integrated Visual CMS for blogs and case studies</li>
+                            <li><i class="fa-solid fa-check"></i> Ultra-fast AWS & Fastly CDN hosting</li>
+                        </ul>
+
+                        <div class="builder-actions">
+                            <a href="https://webflow.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-block">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Webflow
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Square Online -->
+                    <div class="builder-card">
+                        <div class="builder-top">
+                            <div class="builder-icon square-logo"><i class="fa-solid fa-square-full"></i></div>
+                            <div class="builder-badges">
+                                <span class="badge-free">Free Plan ($0/mo)</span>
+                                <span class="badge-drag">Pay Per Sale Only</span>
+                            </div>
+                        </div>
+                        <h3 class="builder-title">Square Online (Free Store)</h3>
+                        <p class="builder-desc">Create a complete online store for free with no monthly subscription — only pay standard processing fees when you make an actual sale.</p>
+                        
+                        <div class="consultant-verdict">
+                            <strong><i class="fa-solid fa-user-tie"></i> Suhail's Verdict:</strong>
+                            <p>"Small food outlets, home bakers, aur zero-budget retail ke liye perfect hai jahan aap bina kisi fixed monthly charge ke direct online bechna shuru kar sakte hain."</p>
+                        </div>
+
+                        <ul class="builder-features">
+                            <li><i class="fa-solid fa-check"></i> $0/month subscription (no monthly cost)</li>
+                            <li><i class="fa-solid fa-check"></i> In-store POS and inventory synchronization</li>
+                            <li><i class="fa-solid fa-check"></i> Pickup, local delivery & shipping options</li>
+                            <li><i class="fa-solid fa-check"></i> Apple Pay, Google Pay, credit cards supported</li>
+                        </ul>
+
+                        <div class="builder-actions">
+                            <a href="https://squareup.com/us/en/online-store" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-block">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Square Online
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hostinger AI Website Builder -->
+                    <div class="builder-card">
+                        <div class="builder-top">
+                            <div class="builder-icon hostinger-logo"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <div class="builder-badges">
+                                <span class="badge-free">Ultra Cheap + Free Domain</span>
+                                <span class="badge-drag">AI in 60 Seconds</span>
+                            </div>
+                        </div>
+                        <h3 class="builder-title">Hostinger AI Builder</h3>
+                        <p class="builder-desc">Prompt-to-website generator. Enter your business name and type, and AI generates full layout, copy, images, and mobile responsiveness in under a minute.</p>
+                        
+                        <div class="consultant-verdict">
+                            <strong><i class="fa-solid fa-user-tie"></i> Suhail's Verdict:</strong>
+                            <p>"Fastest way to get a customized site live with a custom .com domain at very low budget. Great for testing quick ideas."</p>
+                        </div>
+
+                        <ul class="builder-features">
+                            <li><i class="fa-solid fa-check"></i> AI Heatmap, AI Writer, and AI Logo Maker included</li>
+                            <li><i class="fa-solid fa-check"></i> Free domain name for 1 year included with plan</li>
+                            <li><i class="fa-solid fa-check"></i> Zero transaction fees on e-commerce sales</li>
+                            <li><i class="fa-solid fa-check"></i> 24/7 Live multilingual chat support</li>
+                        </ul>
+
+                        <div class="builder-actions">
+                            <a href="https://www.hostinger.com/ai-website-builder" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-block">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Hostinger AI
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: "ASK SUHAIL" COUNSELING & INQUIRIES INBOX -->
+            <section class="tab-pane" id="tab-inbox">
+                <div class="pane-header">
+                    <div class="header-text">
+                        <h2>"Dil Ki Baat Poocho" Inquiries & Counseling Inbox</h2>
+                        <p>Real inquiries and mental health dilemmas submitted by visitors from the front-end form.</p>
+                    </div>
+                    <div class="inbox-actions">
+                        <button class="btn btn-outline-gold btn-sm" id="seedInquiriesBtn">
+                            <i class="fa-solid fa-seedling"></i> Add Seed Questions
+                        </button>
+                        <button class="btn btn-glass btn-sm" id="clearInquiriesBtn">
+                            <i class="fa-solid fa-trash-can"></i> Clear All
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Inquiries List Container -->
+                <div class="inbox-container" id="inboxContainer">
+                    <!-- Inquiries injected via admin.js -->
+                </div>
+            </section>
+
+            <!-- TAB 3: BLOG POST CMS MANAGER -->
+            <section class="tab-pane" id="tab-posts">
+                <div class="pane-header">
+                    <div class="header-text">
+                        <h2>Blog Post Manager (Roman Hindi Articles)</h2>
+                        <p>Write, update, delete, or feature reflections on mental health, self-discovery, and philosophy.</p>
+                    </div>
+                    <button class="btn btn-gold btn-sm" id="openNewPostModalBtn">
+                        <i class="fa-solid fa-plus"></i> Naya Mazmoon Likhein (New Post)
+                    </button>
+                </div>
+
+                <div class="posts-table-wrapper">
+                    <table class="posts-table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Read Time</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="postsTableBody">
+                            <!-- Populated via admin.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- TAB 4: STORE COST & PROFIT CALCULATOR -->
+            <section class="tab-pane" id="tab-calculator">
+                <div class="pane-header">
+                    <div class="header-text">
+                        <h2>E-Commerce Store Setup Cost & Profit Margin Calculator</h2>
+                        <p>Interactive planning tool to calculate your launch budget, break-even units, and net margins before investing.</p>
+                    </div>
+                </div>
+
+                <div class="calculator-grid">
+                    <div class="calc-inputs-card">
+                        <h3><i class="fa-solid fa-sliders"></i> Store Input Assumptions</h3>
+                        
+                        <div class="calc-form-group">
+                            <label>Product Selling Price ($ or ₹):</label>
+                            <input type="number" id="calcPrice" value="45" min="1">
+                        </div>
+
+                        <div class="calc-form-group">
+                            <label>Cost of Goods (COGS per unit):</label>
+                            <input type="number" id="calcCogs" value="15" min="0">
+                        </div>
+
+                        <div class="calc-form-group">
+                            <label>Ad Spend / CAC (Customer Acquisition Cost):</label>
+                            <input type="number" id="calcCac" value="12" min="0">
+                        </div>
+
+                        <div class="calc-form-group">
+                            <label>Shipping & Packaging Cost per order:</label>
+                            <input type="number" id="calcShipping" value="5" min="0">
+                        </div>
+
+                        <div class="calc-form-group">
+                            <label>Platform / Software Fees (Shopify/Apps per month):</label>
+                            <input type="number" id="calcPlatform" value="39" min="0">
+                        </div>
+
+                        <div class="calc-form-group">
+                            <label>Target Monthly Orders (Units):</label>
+                            <input type="number" id="calcUnits" value="200" min="1">
+                        </div>
+
+                        <button class="btn btn-gold btn-block" id="runCalcBtn">
+                            <i class="fa-solid fa-calculator"></i> Calculate Profitability
+                        </button>
+                    </div>
+
+                    <div class="calc-results-card">
+                        <h3><i class="fa-solid fa-chart-pie"></i> Projected Monthly Financials</h3>
+                        
+                        <div class="financial-metrics">
+                            <div class="metric-box">
+                                <span class="metric-label">Gross Revenue</span>
+                                <span class="metric-val" id="resRevenue">$9,000</span>
+                            </div>
+                            <div class="metric-box">
+                                <span class="metric-label">Total COGS & Shipping</span>
+                                <span class="metric-val" id="resCogs">$4,000</span>
+                            </div>
+                            <div class="metric-box">
+                                <span class="metric-label">Total Ad Spend (Marketing)</span>
+                                <span class="metric-val" id="resAds">$2,400</span>
+                            </div>
+                            <div class="metric-box highlight-profit">
+                                <span class="metric-label">Net Profit (Monthly)</span>
+                                <span class="metric-val text-gold" id="resProfit">$2,561</span>
+                            </div>
+                            <div class="metric-box">
+                                <span class="metric-label">Net Profit Margin</span>
+                                <span class="metric-val" id="resMargin">28.4%</span>
+                            </div>
+                            <div class="metric-box">
+                                <span class="metric-label">Break-Even Units Required</span>
+                                <span class="metric-val" id="resBreakEven">3 Units</span>
+                            </div>
+                        </div>
+
+                        <div class="advisor-note">
+                            <strong><i class="fa-solid fa-circle-check"></i> Consultant Recommendation:</strong>
+                            <p id="calcAdvice">Healthy margins! In the AI era, automate your product photography and ad creatives using generative AI tools to drop your CAC even further.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 5: E-COM SCALE CHECKLIST -->
+            <section class="tab-pane" id="tab-checklist">
+                <div class="pane-header">
+                    <div class="header-text">
+                        <h2>10 Golden Rules to Scale in the AI Era</h2>
+                        <p>The proven checklist developed across 12 years of enterprise and startup e-commerce management.</p>
+                    </div>
+                </div>
+
+                <div class="checklist-grid">
+                    <div class="checklist-item">
+                        <span class="step-num">01</span>
+                        <div>
+                            <h4>Ruthless Niche Focus</h4>
+                            <p>Do not be an Amazon. Pick one hyper-specific painful problem for a clearly defined audience. When you try to sell to everybody, you sell to nobody.</p>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item">
+                        <span class="step-num">02</span>
+                        <div>
+                            <h4>High-Converting Frictionless Checkout</h4>
+                            <p>Enable one-click express checkouts (Shop Pay, Apple Pay, Google Pay). 70% of carts are abandoned due to tedious address forms.</p>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item">
+                        <span class="step-num">03</span>
+                        <div>
+                            <h4>Leverage AI for Catalog Speed</h4>
+                            <p>Use generative models for bulk product descriptions, SEO meta tags, and high-fashion product backgrounds instead of expensive studio shoots.</p>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item">
+                        <span class="step-num">04</span>
+                        <div>
+                            <h4>Obsess Over Customer Lifetime Value (LTV)</h4>
+                            <p>First order ad cost can break even. Real wealth is created in repeat automated retention via WhatsApp & email journeys.</p>
+                        </div>
+                    </div>
+
+                    <div class="checklist-item">
+                        <span class="step-num">05</span>
+                        <div>
+                            <h4>Protect Your Founder Mental Health</h4>
+                            <p>The business cannot outgrow the emotional capacity of its founder. Practice mindfulness and disconnect daily to prevent costly burnout.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Modal for New Blog Post -->
+    <div class="admin-modal" id="postModal" aria-hidden="true">
+        <div class="modal-backdrop" id="postModalBackdrop"></div>
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3>Naya Mazmoon Likhein (Create Blog Post)</h3>
+                <button class="modal-close" id="postModalCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="newPostForm">
+                    <div class="form-group">
+                        <label>Post Title (In Roman Hindi):</label>
+                        <input type="text" id="postTitleInput" placeholder="e.g. Jab Dil Bechain Ho Toh Kya Karein?" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Category:</label>
+                            <select id="postCatInput" required>
+                                <option value="mental-health">Zehni Sukoon (Mental Health)</option>
+                                <option value="self-discovery">Khud-Aagahi (Self Discovery)</option>
+                                <option value="philosophy">Rumi & Falsafa (Philosophy)</option>
+                                <option value="career-burnout">Career & AI Era</option>
+                                <option value="relationships">Rishte & Zindagi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Estimated Read Time:</label>
+                            <input type="text" id="postReadTimeInput" value="5 min read" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Short Excerpt (Kholasa):</label>
+                        <textarea id="postExcerptInput" rows="2" placeholder="Ek ya do line me batayein ki is mazmoon me kya seekhne ko milega..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Full Content (HTML or formatted text):</label>
+                        <textarea id="postContentInput" rows="8" placeholder="<p>Apna paigham yahan tafseel se likhein...</p>" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Reflection Prompt for Reader (Dil Ka Sawal):</label>
+                        <input type="text" id="postPromptInput" placeholder="e.g. Aaj aap apne kis darr ko chhodna chahte hain?">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-gold btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Publish Live Post
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hi-Latn" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standup Comic Reflections | Desi Psychology & Life Lessons | Suhail Se Khudtakk</title>
+    <meta name="description" content="Explore our library of hilarious, relatable standup comedy reflections, clinical psychology solutions, and self-discovery essays in Roman Hindi by your peer.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Notice -->
+    <div class="top-notice-bar">
+        <div class="notice-inner">
+            <span class="comic-sticker"><i class="fa-solid fa-microphone-lines"></i> Desi Comic Reflections</span>
+            <span>"Har mazmoon padh kar aapko hansi bhi aayegi, aur dimag ka load bhi halka hoga!"</span>
+        </div>
+    </div>
+
+    <!-- Editorial Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-wrapper">
+                <div class="brand-monogram">س</div>
+                <div class="brand-info">
+                    <span class="brand-name">Suhail Se Khudtakk</span>
+                    <span class="brand-tagline">Standup • Psychology • Desi Reality</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-item-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about.html" class="nav-item-link"><i class="fa-solid fa-user"></i> About Your Peer</a>
+                <a href="psychology.html" class="nav-item-link"><i class="fa-solid fa-brain"></i> Psychology & Self</a>
+                <a href="blogs.html" class="nav-item-link active"><i class="fa-solid fa-book-open"></i> Comic Reflections</a>
+                <a href="ask.html" class="nav-item-link"><i class="fa-solid fa-comment-dots"></i> Dil Ka Kalesh</a>
+                <a href="admin.html" class="nav-item-link admin-link" title="Control Panel">
+                    <i class="fa-solid fa-sliders"></i> Panel
+                </a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                </button>
+                <a href="ask.html" class="btn btn-warm btn-sm hide-mobile">
+                    <span><i class="fa-solid fa-mug-hot"></i> Chai & Baat</span>
+                </a>
+                <button class="mobile-menu-trigger" id="mobileMenuTrigger" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="section-padding">
+        <div class="container">
+            <div class="section-head text-center">
+                <span class="comic-sticker"><i class="fa-solid fa-book-open-reader"></i> Zero Gyaan • Pure Haqeeqat</span>
+                <h1 class="section-title">Standup Reflections & Dil Ki Baatein</h1>
+                <p class="section-lead">
+                    Yeh koi boring self-help kitabein nahi hain. Yeh wo sachhi baatein hain jo aap apne best friend ke sath 
+                    raat ko 2 baje chai ki tapri par baith kar share karte hain.
+                </p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="article-category-tabs" id="blogCategoryTabs">
+                <button class="category-tab-btn active" data-category="all">Sabhi Reflections (All)</button>
+                <button class="category-tab-btn" data-category="mental-health">Overthinking & Brain</button>
+                <button class="category-tab-btn" data-category="self-discovery">Knowing Oneself & Society</button>
+                <button class="category-tab-btn" data-category="career-burnout">Corporate & AI Era</button>
+                <button class="category-tab-btn" data-category="philosophy">Desi Soul & Solitude</button>
+            </div>
+
+            <!-- Articles Grid -->
+            <div class="articles-editorial-grid" id="blogsPageGrid">
+                <!-- Injected dynamically via app.js -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Master Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom-row">
+                <p>&copy; 2026 Suhail Se Khudtakk. Written with humor and clinical insight by your peer.</p>
+                <p><a href="index.html" style="color: #f97316;">Back to Home</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hi-Latn" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dil Ka Kalesh | Talk to Suhail (Your 3 AM Peer) | Suhail Se Khudtakk</title>
+    <meta name="description" content="Share your 3 AM overthinking, career panic, imposter syndrome, or relationship drama in 100% confidence with your peer. Zero judgment, pure peer guidance.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Notice -->
+    <div class="top-notice-bar">
+        <div class="notice-inner">
+            <span class="comic-sticker"><i class="fa-solid fa-lock"></i> 100% Private & Anonymous</span>
+            <span>"Bhai sharmao mat, yahan koi Sharma ji ya padosi nahi baitha hai jo judge karega!"</span>
+        </div>
+    </div>
+
+    <!-- Editorial Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-wrapper">
+                <div class="brand-monogram">س</div>
+                <div class="brand-info">
+                    <span class="brand-name">Suhail Se Khudtakk</span>
+                    <span class="brand-tagline">Standup • Psychology • Desi Reality</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-item-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about.html" class="nav-item-link"><i class="fa-solid fa-user"></i> About Your Peer</a>
+                <a href="psychology.html" class="nav-item-link"><i class="fa-solid fa-brain"></i> Psychology & Self</a>
+                <a href="blogs.html" class="nav-item-link"><i class="fa-solid fa-book-open"></i> Comic Reflections</a>
+                <a href="ask.html" class="nav-item-link active"><i class="fa-solid fa-comment-dots"></i> Dil Ka Kalesh</a>
+                <a href="admin.html" class="nav-item-link admin-link" title="Control Panel">
+                    <i class="fa-solid fa-sliders"></i> Panel
+                </a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                </button>
+                <a href="blogs.html" class="btn btn-secondary btn-sm">
+                    <i class="fa-solid fa-book-open"></i> Comic Library
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="section-padding">
+        <div class="narrow-container">
+            <div class="article-detail-header" style="border: none; padding-top: 10px;">
+                <span class="comic-sticker"><i class="fa-solid fa-shield-heart"></i> Safe & Anonymous Corner</span>
+                <h1 class="article-detail-title">Dil Ka Kalesh Share Karein: Hum Milkar Decode Karenge</h1>
+                <p style="font-size: 1.2rem; color: var(--text-secondary);">
+                    "Bhai dil khol kar likho. Chahe 3 AM overthinking ho, breakup ka dard ho, ya career ka existential crisis — yahan koi lecture nahi milega, bas ek dost ki sachhi sunwayi hogi."
+                </p>
+            </div>
+
+            <!-- Clarification Card -->
+            <div class="peer-clarification-box" style="margin-bottom: 40px;">
+                <p>
+                    <i class="fa-solid fa-shield-halved" style="color: var(--terracotta); margin-right: 8px;"></i>
+                    <strong>Aapka Naam & Data 100% Safe Hai:</strong> Aap chahein toh apna asli naam likhein ya 'Ek Confused Launda/Laundi' likhein. 
+                    Main har message ko personally padhta hoon. Agar aapka masla aam logon ki madad kar sakta hai, toh bina naam liye is par ek comic psychological guide bhi banayi ja sakti hai!
+                </p>
+            </div>
+
+            <!-- Form Card -->
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-medium); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-warm);">
+                <form id="askPageForm">
+                    <div style="margin-bottom: 22px;">
+                        <label style="display: block; font-weight: 600; font-size: 0.95rem; margin-bottom: 8px; color: var(--text-primary);">
+                            Aapka Naam (Ya Anonymous / 'Confused Musafir'):
+                        </label>
+                        <input type="text" id="askPageName" placeholder="Misaal: Aakash ya 'Raat Ka Overthinker'" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-medium); background: var(--bg-surface-soft); color: var(--text-primary); font-family: var(--font-sans); font-size: 0.95rem;" required>
+                    </div>
+
+                    <div style="margin-bottom: 22px;">
+                        <label style="display: block; font-weight: 600; font-size: 0.95rem; margin-bottom: 8px; color: var(--text-primary);">
+                            Email Address (Agar aap private reply chahte hain):
+                        </label>
+                        <input type="email" id="askPageEmail" placeholder="aapka-email@example.com" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-medium); background: var(--bg-surface-soft); color: var(--text-primary); font-family: var(--font-sans); font-size: 0.95rem;" required>
+                    </div>
+
+                    <div style="margin-bottom: 22px;">
+                        <label style="display: block; font-weight: 600; font-size: 0.95rem; margin-bottom: 8px; color: var(--text-primary);">
+                            Masla Kis Category Ka Hai?
+                        </label>
+                        <select id="askPageCategory" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-medium); background: var(--bg-surface-soft); color: var(--text-primary); font-family: var(--font-sans); font-size: 0.95rem;" required>
+                            <option value="Overthinking & Anxiety">3 AM Overthinking & Dimag Ka Kalesh (Clinical)</option>
+                            <option value="Career & Future Fear">Corporate Grind, JIRA Depression & AI Era Ka Khauf</option>
+                            <option value="Relationship & Heartbreak">Rishton Ka Dhoka, Ghosting & Heartbreak</option>
+                            <option value="Identity & Self Doubt">Imposter Syndrome: 'Main Kaun Hoon Aur Kya Kar Raha Hoon?'</option>
+                            <option value="Society & People Pleasing">'Log Kya Kahenge' Syndrome Se Chhutkara</option>
+                            <option value="Other Life Problem">Koi Aur Zindagi Ka Masla</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 28px;">
+                        <label style="display: block; font-weight: 600; font-size: 0.95rem; margin-bottom: 8px; color: var(--text-primary);">
+                            Apne Dil Ka Kalesh Likhein (Bina Kisi Filter Ke):
+                        </label>
+                        <textarea id="askPageMessage" rows="6" placeholder="Khol kar likhein bhai... Kya baat hai jo aapko raat ko sone nahi de rahi? Aapka peer bina judge kiye sun raha hai." style="width: 100%; padding: 14px 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-medium); background: var(--bg-surface-soft); color: var(--text-primary); font-family: var(--font-sans); font-size: 0.95rem; line-height: 1.6;" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-warm" style="width: 100%; padding: 14px; font-size: 1.05rem;">
+                        <i class="fa-solid fa-paper-plane"></i> Kalesh Bhejein (Submit Inquiry)
+                    </button>
+                </form>
+
+                <div id="askPageSuccess" style="display: none; text-align: center; padding: 30px 10px;">
+                    <div style="font-size: 3rem; color: var(--sage); margin-bottom: 16px;"><i class="fa-solid fa-circle-check"></i></div>
+                    <h3 style="font-size: 1.6rem; margin-bottom: 10px;">Aapka Message Hum Tak Pahoch Gaya!</h3>
+                    <p style="font-size: 1rem; color: var(--text-secondary); max-width: 500px; margin: 0 auto 20px;">
+                        Aapka peer aapka message personally padhega. Tab tak ek cup garam chai piyo aur dimag ko bolo: <em>"Bhai theek hai, kal dekhte hain!"</em>
+                    </p>
+                    <button class="btn btn-secondary btn-sm" id="askPageResetBtn">Ek Aur Baat Poochen</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Master Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom-row">
+                <p>&copy; 2026 Suhail Se Khudtakk. Safe, empathetic, peer-driven sanctuary.</p>
+                <p><a href="index.html" style="color: #f97316;">Back to Home</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
